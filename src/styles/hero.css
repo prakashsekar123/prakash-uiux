@@ -522,17 +522,74 @@
     grid-template-columns: 1fr;
   }
   .hero-right {
-    display: none;
+    margin-top: 20px;
+  }
+  .hero-visual {
+    max-width: 360px;
   }
   .scroll-indicator {
     left: 32px;
   }
 }
+
 @media (max-width: 768px) {
   .hero {
     padding: 110px 20px 60px;
   }
   .hero-stats {
     gap: 24px;
+  }
+  .hero-visual {
+    max-width: 300px;
+  }
+  .hero-center-card {
+    width: 180px;
+    height: 180px;
+    padding: 14px;
+  }
+  .hero-center-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .skill-chip {
+    padding: 7px 12px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-visual {
+    max-width: 260px;
+  }
+  .hero-center-card {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+  }
+  .hero-center-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  .hero-center-name {
+    font-size: 13px;
+  }
+  .hero-center-role {
+    font-size: 8px;
+  }
+  .skill-chip {
+    padding: 5px 10px;
+    font-size: 9px;
+  }
+  .chip-2,
+  .chip-3 {
+    right: -2%;
+  }
+  .chip-5,
+  .chip-6 {
+    left: -2%;
   }
 }
