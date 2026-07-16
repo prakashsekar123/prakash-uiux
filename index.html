@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prakash S — UI/UX Designer | AI Products, SaaS &amp; Enterprise UX</title>
+    <meta name="description" content="Portfolio of Prakash S, a UI/UX Designer specializing in AI-powered products, SaaS platforms, dashboards and enterprise UX. Based in Coimbatore, India." />
+    <meta name="theme-color" content="#06070f" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fbfbfe" media="(prefers-color-scheme: light)" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Prakash S — UI/UX Designer" />
+    <meta property="og:description" content="AI Products · SaaS · Enterprise UX · Mobile design portfolio." />
+    <!-- Add an og:image tag once a real 1200x630 cover graphic exists at public/og-cover.png -->
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Add <link rel="canonical" href="..."> once this is deployed to a real domain -->
+
+    <!-- Preconnect to font hosts before any CSS requests them, so the connection
+         is warm the moment the stylesheet needs it (saves ~100-300ms). -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+
+    <!-- Fonts loaded as real <link> stylesheets (not CSS @import) so the browser
+         can fetch them in parallel with the app bundle instead of blocking on a
+         second round-trip inside the CSS cascade. -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
+    />
+
+    <!-- Applies the saved/system theme before first paint to avoid a flash of
+         the wrong theme (FOUC). Tiny, inlined, blocking by design. -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("prakash-theme");
+          var theme =
+            stored || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

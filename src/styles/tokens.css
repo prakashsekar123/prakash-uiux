@@ -1,0 +1,77 @@
+/* ==========================================================================
+   DESIGN TOKENS
+   Single source of truth for color, type and motion. Every other stylesheet
+   consumes these variables — never hardcode a hex value outside this file.
+   Two themes share the same shape so components never need theme-specific
+   CSS; only the values change.
+   ========================================================================== */
+
+:root {
+  /* ---- Dark theme (default) ---- */
+  --bg: #06070f;
+  --surface: #0b0e1e;
+  --card: #10142a;
+  --card-solid: #12162e;
+
+  --primary: #6d5df6;
+  --primary-strong: #8577ff;
+  --secondary: #22d3ee;
+  --purple: #8b5cf6;
+
+  --text: #f5f6fb;
+  --muted: rgba(245, 246, 251, 0.68);
+  --muted-2: rgba(245, 246, 251, 0.42);
+
+  --border: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(109, 93, 246, 0.5);
+  --glass: rgba(255, 255, 255, 0.035);
+  --field-bg: rgba(255, 255, 255, 0.03);
+
+  --shadow-color: 0, 0, 0;
+  --overlay: rgba(4, 5, 12, 0.92);
+
+  --grad: linear-gradient(120deg, var(--primary), var(--purple) 55%, var(--secondary));
+  --grad-text: linear-gradient(100deg, #a99bff, #c7b8ff 45%, #67e8f9);
+  --grad-soft: linear-gradient(120deg, rgba(109, 93, 246, 0.08), rgba(34, 211, 238, 0.05));
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "General Sans", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --bg: #fbfbfe;
+  --surface: #f1f2f9;
+  --card: #ffffff;
+  --card-solid: #ffffff;
+
+  --primary: #5b4fe0;
+  --primary-strong: #4a3fd6;
+  --secondary: #0891b2;
+  --purple: #7c3aed;
+
+  --text: #12131f;
+  --muted: rgba(18, 19, 31, 0.66);
+  --muted-2: rgba(18, 19, 31, 0.44);
+
+  --border: rgba(18, 19, 31, 0.1);
+  --border-hover: rgba(91, 79, 224, 0.45);
+  --glass: rgba(18, 19, 31, 0.03);
+  --field-bg: rgba(18, 19, 31, 0.025);
+
+  --shadow-color: 30, 20, 60;
+  --overlay: rgba(251, 251, 254, 0.92);
+
+  --grad: linear-gradient(120deg, var(--primary), var(--purple) 55%, var(--secondary));
+  --grad-text: linear-gradient(100deg, #5b4fe0, #7c3aed 45%, #0891b2);
+  --grad-soft: linear-gradient(120deg, rgba(91, 79, 224, 0.07), rgba(8, 145, 178, 0.05));
+
+  color-scheme: light;
+}
